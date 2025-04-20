@@ -40,7 +40,7 @@ export const handleRouter = async () => {
   const { template, execScripts } = await importHtml(app.entry);
 
   const container = document.querySelector(app.container);
-  container.appendChild(template);
+  container.appendChild(template); 
 
   // 设置主应用渲染标识全局变量
   window.__POWER_BY_QIANKUN__ = true; // qiankun标识
